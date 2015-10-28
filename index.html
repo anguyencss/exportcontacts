@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title>Exporting Lync or Skype for Business Contacts with the Skype Web SDK</title>
+    <!-- SkypeWeb library requires IE compatible mode turned off -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- the jQuery library written by John Resig (MIT license) -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.1.min.js"></script>
+
+    <!-- SkypeWebSDK Bootstrap Libray -->
+    <script src="https://swx.cdn.skype.com/shared/v/1.1.23.0/SkypeBootstrap.min.js"></script>
+
+    <!-- Load Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Javascript used in this example -->
+    <script src="index.js"></script>
+
+    <!-- clipboard.js library to copy text to the clipboard (all browsers except Safari) -->
+    <!-- See: https://zenorocha.github.io/clipboard.js/ -->
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.1/clipboard.min.js"></script>
+
+    <!-- Styles for this demonstration -->
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h3>Exporting Lync or Skype for Business Contacts with the Skype Web SDK</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="loginbox" class="loginbox">
+                    <div>Login</div>
+                    <div id="address" contenteditable="true" class="input form-control">pluralsight@telewebica.com.au</div>
+                    <div>Password</div>
+                    <input type="password" id="password" name="password" class="input form-control" />
+                    <div id="signin" class="button">Sign In</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="contacts">
+                    <div id="signout" class="button">Sign Out</div>
+                    <div id="retrieve_all" class="button">Export Contacts</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <br />
+        <div class="row" id="logs">
+            <div class="col-md-12 small">
+                <div id="logging_box" contenteditable="false" class="code"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 small">
+                <b>Contact List Export</b><br />
+                <div id="export_box" contenteditable="false" class="code"></div>
+                <br />
+                <button class="btn" id="btn" title="Copied!"  data-clipboard-target="#export_box">
+                    <img src="assets/clippy.svg" alt="Copy to clipboard">
+                </button></div>
+        </div>
+    </div>
+
+</body>
+</html>
