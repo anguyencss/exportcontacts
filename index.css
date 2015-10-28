@@ -1,15 +1,15 @@
 .input {
-border: 1pt solid gray;
-padding: 2pt;
-overflow: hidden;
-white-space: nowrap;
+    border: 1pt solid gray;
+    padding: 2pt;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .button {
-border: 1pt solid gray;
-cursor: pointer;
-padding: 2pt 5pt;
-display: inline-block;
+    border: 1pt solid gray;
+    cursor: pointer;
+    padding: 2pt 5pt;
+    display: inline-block;
 }
 
 .button:hover {
